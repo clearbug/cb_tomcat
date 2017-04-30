@@ -28,10 +28,11 @@ public class Response implements ServletResponse {
         byte[] bytes = new byte[BUFFER_SIZE];
         FileInputStream fis = null;
         try {
-            this.output.write(Constants.successResponseLine.getBytes());
-
             File file = new File(Constants.WEB_ROOT, request.getUri());
             fis = new FileInputStream(file);
+
+            this.output.write(Constants.successResponseLine.getBytes());
+
             int ch = fis.read(bytes, 0, BUFFER_SIZE);
             while (ch != -1) {
                 this.output.write(bytes, 0, ch);
