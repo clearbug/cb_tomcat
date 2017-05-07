@@ -11,3 +11,15 @@
 2. RFC2396，统一资源定位器 URL
 
 ## 第二章：一个简单的 Servlet 容器
+
+## 第三章：连接器
+### Servlet 规范版本
+1. Servlet 2.3 和 2.4
+
+### Tomcat 版本
+1. Tomcat 4（本章建立的连接器是第 4 章讨论的 Tomcat4 的默认连接器的一个简化版本。虽然这个连接器在 Tomcat 4 中是不推荐使用的，但它仍然可以作为一个非常棒的学习工具。）
+
+### StringManager 类
+1. 一个像 Tomcat 这样的大型应用需要仔细的处理错误信息。
+2. 在 Tomcat 中，错误信息对于系统管理员和 servlet 程序员都是有用的。
+3. StringManager 类使用了单例模式（singleton）。
